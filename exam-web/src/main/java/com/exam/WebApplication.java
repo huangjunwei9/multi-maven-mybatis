@@ -16,6 +16,6 @@ public class WebApplication {
     public static void main(String[] args) {
         SpringApplication.run(WebApplication.class, args);
         System.out.println("成功启动2");
-        System.out.println("成功启动3");
+        System.out.println("成功启动3   ?");
     }
 }
