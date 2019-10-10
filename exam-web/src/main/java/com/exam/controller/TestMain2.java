@@ -6,4 +6,7 @@ package com.exam.controller;
  * @email hjunwei@foxmail.com
  */
 public class TestMain2 {
+    public static void main(String[] args) {
+        System.out.println("Hello world");
+    }
 }
