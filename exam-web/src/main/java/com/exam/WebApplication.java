@@ -16,7 +16,7 @@ public class WebApplication {
     public static void main(String[] args) {
         SpringApplication.run(WebApplication.class, args);
         System.out.println("成功启动2");
-        System.out.println("成功启动3   ?  ");
+        System.out.println("成功启动3   ? 地方 ");
         System.out.println("成功启动4   ?");
         System.out.println("成功启动5   ?早上2019/10/10");
     }
