@@ -17,5 +17,8 @@ public class TestMain2 {
 
         System.out.println("合并：后端+前端（sub-dev） ");
         System.out.println("我已经把sub-dev合并到dev上了");
+
+
+        System.out.println("我要把dev合并到master上了");
     }
 }
