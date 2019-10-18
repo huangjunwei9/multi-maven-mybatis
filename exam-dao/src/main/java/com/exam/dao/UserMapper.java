@@ -11,7 +11,8 @@ import org.springframework.stereotype.Repository;
  * @create 2019/9/30 14:08
  * @email hjunwei@foxmail.com
  */
-@Mapper
+//@Mapper
+@Repository
 public interface UserMapper {
     User queryById(Integer id);
 }
