@@ -1,14 +1,14 @@
 package com.exam.dao;
 
-import com.exam.entity.User;
+import com.exam.entity.Student;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
  * @Author 黄军威
- * @create 2019/10/18 11:16
+ * @create 2019/10/18 11:32
  * @email hjunwei@foxmail.com
  */
 @Mapper
-public interface UserMapper {
-    User queryUserById(Integer id);
+public interface StudentMapper {
+    Student queryStudentById(Integer id);
 }

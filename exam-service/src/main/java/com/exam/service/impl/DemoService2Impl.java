@@ -1,7 +1,6 @@
 package com.exam.service.impl;
 
 import com.exam.dao.StudentMapper;
-import com.exam.dao.UserMapper;
 import com.exam.entity.Student;
 import com.exam.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +31,7 @@ public class DemoService2Impl implements DemoService {
     @Override
     public Object queryStudentById(){
         Integer id = 1;
-        return studentMapper.queryStudentById(id);
+        Student student = studentMapper.queryStudentById(id);
+        return student;
     }
 }

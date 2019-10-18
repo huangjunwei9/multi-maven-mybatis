@@ -1,12 +1,14 @@
 package com.exam.entity;
 
+import java.io.Serializable;
+
 /**
  * @Author 黄军威
  * @create 2019/9/30 14:01
  * @email hjunwei@foxmail.com
  */
 
-public class User {
+public class User implements Serializable {
     Integer id;
     Integer score;
     Integer content;
