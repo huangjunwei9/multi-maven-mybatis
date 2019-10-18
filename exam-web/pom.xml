@@ -11,8 +11,8 @@
 
     <artifactId>exam-web</artifactId>
 
-    <!--test:好的??-->
-    <!--test:你好?? ?-->
+    <!--query:好的??-->
+    <!--query:你好?? ?-->
     <!--引入依赖///-->
     <dependencies>
         <dependency>
@@ -30,8 +30,8 @@
             <artifactId>exam-service</artifactId>
         </dependency>
     </dependencies>
-    <!--test:好的-->
-    <!--test:你好-->
+    <!--query:好的-->
+    <!--query:你好-->
     <!--引入依赖-->
 
 </project>

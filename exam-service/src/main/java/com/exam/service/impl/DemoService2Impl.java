@@ -1,6 +1,9 @@
 package com.exam.service.impl;
 
+import com.exam.dao.StudentDao;
+import com.exam.entity.Student;
 import com.exam.service.DemoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,10 +13,25 @@ import org.springframework.stereotype.Service;
  */
 @Service("demoService2Impl")
 public class DemoService2Impl implements DemoService {
-    private int b = 1;
 
+    @Autowired
+    StudentDao studentDao;
+
+    /**
+     * 根据用户Id查询User
+     * */
     @Override
-    public String test() {
-        return "test2";
+    public Object query() {
+        return new Student();
+    }
+
+    /**
+     * 根据用户Id查询Student
+     * */
+    @Override
+    public Object queryStudentById(){
+        Integer id = 1;
+        Student student = studentDao.queryStudentById(id);
+        return student;
     }
 }
