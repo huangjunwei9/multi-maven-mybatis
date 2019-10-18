@@ -1,6 +1,6 @@
 package com.exam.controller;
 
-import com.exam.dao.StudentMapper;
+import com.exam.dao.StudentDao;
 import com.exam.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -23,7 +23,7 @@ public class DemoController {
     DemoService demoService1;
 
     @Autowired
-    StudentMapper studentMapper;
+    StudentDao studentDao;
 
     @Autowired
     @Qualifier("demoService2Impl")//("demoService1Impl")
@@ -48,7 +48,7 @@ public class DemoController {
      * */
     @GetMapping("/test3")
     public Object test3() {
-        studentMapper.queryStudentById(1);
+        studentDao.queryStudentById(1);
         return demoService2.queryStudentById();
     }
 

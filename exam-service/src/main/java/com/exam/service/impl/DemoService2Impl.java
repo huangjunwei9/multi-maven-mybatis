@@ -1,6 +1,6 @@
 package com.exam.service.impl;
 
-import com.exam.dao.StudentMapper;
+import com.exam.dao.StudentDao;
 import com.exam.entity.Student;
 import com.exam.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 public class DemoService2Impl implements DemoService {
 
     @Autowired
-    StudentMapper studentMapper;
+    StudentDao studentDao;
 
     /**
      * 根据用户Id查询User
@@ -31,7 +31,7 @@ public class DemoService2Impl implements DemoService {
     @Override
     public Object queryStudentById(){
         Integer id = 1;
-        Student student = studentMapper.queryStudentById(id);
+        Student student = studentDao.queryStudentById(id);
         return student;
     }
 }

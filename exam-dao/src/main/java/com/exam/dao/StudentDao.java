@@ -11,6 +11,6 @@ import org.springframework.stereotype.Repository;
  */
 //@Mapper
 @Repository
-public interface StudentMapper {
+public interface StudentDao {
     Student queryStudentById(Integer id);
 }

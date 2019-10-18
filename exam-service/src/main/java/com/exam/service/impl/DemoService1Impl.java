@@ -1,6 +1,6 @@
 package com.exam.service.impl;
 
-import com.exam.dao.UserMapper;
+import com.exam.dao.UserDao;
 import com.exam.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 @Service("demoService1Impl")
 public class DemoService1Impl implements DemoService {
     @Autowired
-    UserMapper userMapper;
+    UserDao userDao;
 
     /** 根据Id查询User
      *
@@ -22,7 +22,7 @@ public class DemoService1Impl implements DemoService {
     @Override
     public Object query() {
         Integer userId = Integer.valueOf(1);
-        return userMapper.queryById(userId);
+        return userDao.queryById(userId);
     }
 
     @Override
