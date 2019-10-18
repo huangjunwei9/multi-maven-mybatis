@@ -25,14 +25,26 @@ public class DemoController {
     @Qualifier("demoService2Impl")//("demoService1Impl")
     DemoService demoService2;
 
+    /** 调用DemoService1Impl
+     *
+     * @param
+     * */
     @GetMapping("/test1")
-    public String test1() {
-        return demoService1.test();
+    public Object test1() {
+        return demoService1.query();
     }
 
     @GetMapping("/test2")
-    public String test2() {
-        return demoService2.test();
+    public Object test2() {
+        return demoService2.query();
+    }
+
+    /**
+     * 根据ID查询学生
+     * */
+    @GetMapping("/test3")
+    public Object test3() {
+        return demoService2.queryStudentById();
     }
 
 

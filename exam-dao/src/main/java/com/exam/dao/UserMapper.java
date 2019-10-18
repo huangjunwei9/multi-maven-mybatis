@@ -2,6 +2,7 @@ package com.exam.dao;
 
 import com.exam.entity.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
@@ -13,6 +14,6 @@ import org.springframework.stereotype.Repository;
 @Mapper
 public interface UserMapper {
 
-    @Select("select * from user where id = 1")
-    User getById();
+    @Select("select * from user where id = #{id}")
+    User queryById(@Param("id") int id);
 }

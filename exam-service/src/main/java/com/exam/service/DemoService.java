@@ -6,5 +6,6 @@ package com.exam.service;
  * @email hjunwei@foxmail.com
  */
 public interface DemoService {
-    public abstract String test();
+    public abstract Object query();
+    public abstract Object queryStudentById();
 }

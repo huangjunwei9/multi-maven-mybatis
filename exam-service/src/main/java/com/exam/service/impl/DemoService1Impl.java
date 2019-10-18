@@ -15,11 +15,19 @@ public class DemoService1Impl implements DemoService {
     @Autowired
     UserMapper userMapper;
 
-    private int a = 1;
+    /** 根据Id查询User
+     *
+     *
+     * */
+    @Override
+    public Object query() {
+        Integer userId = Integer.valueOf(1);
+        return userMapper.queryById(userId);
+    }
 
     @Override
-    public String test() {
-        return userMapper.getById().toString();
+    public Object queryStudentById() {
+        return null;
     }
 
 

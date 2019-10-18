@@ -9,6 +9,7 @@
         <module>exam-web</module>
         <module>exam-dao</module>
         <module>exam-service</module>
+        <module>exam-daoxml</module>
     </modules>
 
     <parent>
