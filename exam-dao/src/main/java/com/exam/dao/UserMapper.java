@@ -13,7 +13,5 @@ import org.springframework.stereotype.Repository;
  */
 @Mapper
 public interface UserMapper {
-
-    @Select("select * from user where id = #{id}")
-    User queryById(@Param("id") int id);
+    User queryById(Integer id);
 }

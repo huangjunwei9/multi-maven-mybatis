@@ -9,7 +9,6 @@
         <module>exam-web</module>
         <module>exam-dao</module>
         <module>exam-service</module>
-        <module>exam-daoxml</module>
     </modules>
 
     <parent>
@@ -50,7 +49,7 @@
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
 
-            <!--mybatis-->
+            <!--mapping-->
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>

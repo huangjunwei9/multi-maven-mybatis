@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.exam.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.exam.entity.User">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="score" jdbcType="INTEGER" property="score" />
+        <result column="content" jdbcType="INTEGER" property="content" />
+    </resultMap>
+
+    <select id="queryById" resultType="com.exam.entity.User">
+        select * from user where id = #{id}
+    </select>
+
+</mapper>
