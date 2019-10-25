@@ -131,15 +131,10 @@ public class TestMainBaiduApi {
         A a = new A();
         a.aa = "1";
         a.bb = "2";
-//        String target = a.bb + a.aa;
-//        if(target == null){
-//            System.out.println("target = null");
-//        }
-//        System.out.println(target.split("3")[0]);
 
         TestMainBaiduApi getLatAndLngByBaidu = new TestMainBaiduApi();
         Map<String, String> map = getLatAndLngByBaidu.getLatAndLngByAddress("北京市-");
-        System.out.println(map.get("lat"));
+        System.out.println(map.get("lat"));//你好
         System.out.println(map.get("lng"));
     }
 
