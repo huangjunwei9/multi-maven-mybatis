@@ -141,5 +141,6 @@ public class TestMainBaiduApi {
     public static class A{
         String aa;
         String bb;
+
     }
 }
