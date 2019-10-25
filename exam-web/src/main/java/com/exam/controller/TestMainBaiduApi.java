@@ -139,7 +139,7 @@ public class TestMainBaiduApi {
 
         TestMainBaiduApi getLatAndLngByBaidu = new TestMainBaiduApi();
         Map<String, String> map = getLatAndLngByBaidu.getLatAndLngByAddress("北京市-");
-        System.out.println(map.get("lat"));
+        System.out.println(map.get("lat"));//你好
         System.out.println(map.get("lng"));
     }
 
