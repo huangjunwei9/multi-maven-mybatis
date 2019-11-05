@@ -17,7 +17,6 @@ public class DemoService1Impl implements DemoService {
 
     /** 根据Id查询User
      *
-     *
      * */
     @Override
     public Object query() {

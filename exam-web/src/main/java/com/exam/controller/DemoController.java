@@ -4,6 +4,7 @@ import com.exam.dao.StudentDao;
 import com.exam.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,6 +30,13 @@ public class DemoController {
     @Qualifier("demoService2Impl")//("demoService1Impl")
     DemoService demoService2;
 
+    @Autowired
+    @Qualifier("baiDuApiImpl")
+    DemoService demoBaiDuApiService;//
+
+    @Value("${shop.baidu.address.preurl}")
+    private String preUrl;
+
     /** 调用DemoService1Impl
      *
      * @param
@@ -36,12 +44,12 @@ public class DemoController {
     @GetMapping("/test1")
     public Object test1() {
 
-
         return demoService1.query();
     }
 
     @GetMapping("/test2")
     public Object test2() {
+
         return demoService2.query();
     }
 
@@ -54,6 +62,14 @@ public class DemoController {
         return demoService2.queryStudentById();
     }
 
+    /**
+     * 调用百度地图
+     */
+    @GetMapping("/test4")
+    public Object test4(){
+        System.out.println(preUrl);
+        return demoBaiDuApiService.query();
+    }
 
 
 }

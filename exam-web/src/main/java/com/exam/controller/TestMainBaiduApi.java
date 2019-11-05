@@ -72,60 +72,6 @@ public class TestMainBaiduApi {
         }
     }
 
-//    public Map<String, String> getLatAndLngByAddress(String addr) {
-//        String address = "";
-//        try {
-//            address = java.net.URLEncoder.encode(addr,"UTF-8");
-//        } catch (UnsupportedEncodingException e) {
-//            System.out.println(e.getMessage());
-//        }
-//        String url = preHttp + "address=" + address + "&output=json&ak=" + ak; //get请求的url
-//
-//        URL myURL = null;
-//        URLConnection httpsConn = null;
-//        //进行转码
-//        try {
-//            myURL = new URL(url);
-//        } catch (MalformedURLException e) {
-//            System.out.println(e.getMessage());
-//        }
-//        StringBuffer sb = new StringBuffer();
-//        try {
-//            httpsConn = myURL.openConnection();
-//            if (httpsConn != null) {
-//                InputStreamReader insr = new InputStreamReader(
-//                        httpsConn.getInputStream(), "UTF-8");
-//                BufferedReader br = new BufferedReader(insr);
-//                String data = null;
-//                while ((data = br.readLine()) != null) {
-//                    sb.append(data);
-//                }
-//                insr.close();
-//            }
-//        } catch (IOException e) {
-//            System.out.println(e.getMessage());
-//        }
-//
-//        String realJson = sb.toString();
-//
-//        JSONObject resultJson = JSON.parseObject(realJson);
-//        JSONObject locationObj = null;
-//        Map<String, String> map = new HashMap<>();
-//        try{
-//            locationObj = (JSONObject)((JSONObject)resultJson.get("result")).get("location");
-//        }catch(Exception e){
-//            System.out.println("没有获取到经纬度");
-//            return map;
-//        }
-//        if(locationObj.get("lat") != null){
-//            map.put("lat", locationObj.get("lat").toString());//纬度
-//        }
-//        if(locationObj.get("lng") != null){
-//            map.put("lng", locationObj.get("lng").toString());//经度
-//        }
-//        return map;
-//    }
-
 
     public static void main(String[] args) throws IOException {
         A a = new A();
