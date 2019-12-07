@@ -16,6 +16,7 @@
             <groupId>com.example</groupId>
             <artifactId>exam-dao</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>

@@ -11,8 +11,6 @@
 
     <artifactId>exam-web</artifactId>
 
-    <!--query:好的??-->
-    <!--query:你好?? ?-->
     <!--引入依赖///-->
     <dependencies>
         <!--json包-->
@@ -28,18 +26,29 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>com.example</groupId>
             <artifactId>exam-service</artifactId>
         </dependency>
     </dependencies>
-    <!--query:好的-->
-    <!--query:你好-->
-    <!--引入依赖-->
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>
+                                repackage
+                            </goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
 
