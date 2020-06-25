@@ -19,7 +19,7 @@ public class WebApplication {
         System.out.println("成功启动3   ?  ");
         System.out.println("成功启动4   ?");
         System.out.println("成功启动5   ?早上2019/10/10");
-        System.out.println("2020.06.25 dev-hjw");
+        System.out.println("2020.06.25 dev-hjw 19:48");
         /****
          * 你好
          * **/
